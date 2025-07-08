@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+</head>
+<body>
+    <h1>My Journey</h1>
+    
+    <picture>
+        <source media="(min-width: 1200px)" srcset="large-image.jpg">
+        <source media="(min-width: 768px)" srcset="medium-image.jpg">
+        <source media="(max-width: 767px)" srcset="small-image.jpg">
+        <img src="default-image.jpg" alt="My professional journey">
+    </picture>
+    
+    <h2>My Story</h2>
+    <audio controls>
+        <source src="my-story.mp3" type="audio/mpeg">
+        <source src="my-story.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <h2>My Vision</h2>
+    <video width="400" controls>
+        <source src="my-vision.mp4" type="video/mp4">
+        <source src="my-vision.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    
+    <h2>My Achievements</h2>
+    <object data="achievements.pdf" width="400" height="300">
+        <param name="achievements" value="achievements.pdf">
+        PDF of my achievements
+    </object>
+    
+    <h2>My Skills</h2>
+    <embed src="skills-chart.svg" width="400" height="300" type="image/svg+xml">
+    
+    <h2>Connect With Me</h2>
+    <iframe width="400" height="300" src="https://example.com/contact"></iframe>
+</body>
+</html>
